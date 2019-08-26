@@ -9,6 +9,13 @@
     },
     "soft_file_universal": "scripts$#sep#$beekeeper.pl"
   },
+  "deps": {
+    "cpanm": {
+      "local": "yes",
+      "name": "CPAN minus",
+      "tags": "tool,cpanm"
+    }
+  },
   "soft_name": "Ensembl Hive repository",
   "tags": [
     "tool",

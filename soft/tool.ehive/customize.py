@@ -76,7 +76,7 @@ def setup(i):
     path_modules            = os.path.join(path_repo_root, 'modules')
 
     env                     = i['env']
-    env['PERL5LIB']         = path_modules + ( ';%PERL5LIB%' if winh=='yes' else ':${PERL5LIB}:${HOME}/perl5/lib/perl5')
+    env['PERL5LIB']         = path_modules + ( ';%PERL5LIB%' if winh=='yes' else ':${PERL5LIB}')
     env['PATH']             = path_scripts + ( ';%PATH%' if winh=='yes' else ':${PATH}')
 
     env_prefix                  = cus['env_prefix']
