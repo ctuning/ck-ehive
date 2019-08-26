@@ -1,10 +1,16 @@
 {
   "data_uoa": "ck-ehive",
-  "data_uid": "f773f48c0a815d3f",
+  "data_uid": "1af47589446b34c8",
   "data_alias": "ck-ehive",
   "data_name": "ck-ehive",
   "dict": {
     "shared": "git",
+    "sync": "yes",
+    "repo_deps": [
+      {
+        "repo_uoa": "ck-env"
+      }
+    ],
     "url": "https://github.com/ctuning/ck-ehive"
   }
 }
