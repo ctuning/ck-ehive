@@ -1,0 +1,18 @@
+{
+  "auto_detect": "yes",
+  "customize": {
+    "check_that_exists": "yes",
+    "env_prefix": "CK_ENV_CPANM",
+    "limit_recursion_dir_search": {
+      "linux": 5,
+      "win": 5
+    },
+    "soft_file_universal": "bin$#sep#$cpanm"
+  },
+  "soft_name": "CPAN-minus installation utility",
+  "tags": [
+    "tool",
+    "cpanm",
+    "cpan-minus"
+  ]
+}
