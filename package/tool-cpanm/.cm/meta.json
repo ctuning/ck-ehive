@@ -1,0 +1,30 @@
+{
+  "check_exit_status": "yes",
+  "customize": {
+    "install_env": {
+      "CPANM_URL": "https://cpanmin.us",
+      "CPANM_PACKAGE": "App::cpanminus"
+    }
+  },
+  "deps": {
+    "wget": {
+      "local": "yes",
+      "name": "wget tool",
+      "sort": 10,
+      "tags": "tool,wget"
+    }
+  },
+  "end_full_path_universal": "$#home#$$#sep#$perl5$#sep#$bin$#sep#$cpanm",
+  "only_for_host_os_tags": [],
+  "only_for_target_os_tags": [
+    "linux"
+  ],
+  "process_script": "install",
+  "soft_uoa": "tool.cpanm",
+  "suggested_path": "tool-cpanm",
+  "tags": [
+    "tool",
+    "cpanm",
+    "cpan-minus"
+  ]
+}
