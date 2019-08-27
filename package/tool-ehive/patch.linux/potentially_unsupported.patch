@@ -1,0 +1,23 @@
+diff --git a/cpanfile b/cpanfile
+index 63ba9f47..671d5788 100644
+--- a/cpanfile
++++ b/cpanfile
+@@ -1,7 +1,7 @@
+ requires 'DBI';
+-requires 'DBD::mysql';
++#requires 'DBD::mysql';
+ requires 'DBD::SQLite';
+-requires 'DBD::Pg';
++#requires 'DBD::Pg';
+ 
+ requires 'Capture::Tiny';
+ requires 'DateTime';
+@@ -22,7 +22,7 @@ on 'test' => sub {
+ };
+ 
+ recommends 'Getopt::ArgvFile';
+-recommends 'BSD::Resource';
++#recommends 'BSD::Resource';
+ recommends 'Chart::Gnuplot';
+ recommends 'GraphViz';
+ 
