@@ -85,5 +85,6 @@ def setup(i):
     env[env_prefix+'_ROOT']     = path_perl5_root
     env[env_prefix+'_BIN']      = path_bin
     env[env_prefix+'_PERL5LIB'] = path_perl5_lib
+    env[env_prefix+'_BIN_FULL'] = full_path
 
     return {'return':0, 'bat':''}
