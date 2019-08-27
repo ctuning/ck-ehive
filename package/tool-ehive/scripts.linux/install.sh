@@ -16,7 +16,7 @@ echo "Installing eHive's Perl dependencies using cpanm"
 
 "${CK_ENV_CPANM_BIN_FULL}" --force B::Keywords
 
-"${CK_ENV_CPANM_BIN_FULL}" --installdeps --with-recommends "${INSTALL_DIR}/${PACKAGE_SUB_DIR}"
+"${CK_ENV_CPANM_BIN_FULL}" --installdeps --with-recommends --notest "${INSTALL_DIR}/${PACKAGE_SUB_DIR}"
 
 
 if [ "${?}" != "0" ] ; then
