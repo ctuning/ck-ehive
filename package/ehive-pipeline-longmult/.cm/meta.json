@@ -1,0 +1,32 @@
+{
+  "customize": {
+    "extra_dir": "",
+    "install_env": {
+        "_PIPECONFIG_CLASS": "Bio::EnsEMBL::Hive::Examples::LongMult::PipeConfig::LongMult_conf",
+        "_SQLITE_FILE": "ehive_pipeline.db"
+    },
+    "no_os_in_suggested_path": "yes",
+    "no_ver_in_suggested_path": "yes"
+  },
+  "deps": {
+    "ehive": {
+      "local": "yes",
+      "name": "eHive tool",
+      "tags": "tool,ehive"
+    }
+  },
+  "end_full_path_universal": "ehive_pipeline.db",
+  "process_script": "install",
+  "soft_uoa": "ehive.pipeline.sqlite",
+  "suggested_path": "ehive-pipeline-longmult",
+  "tags": [
+    "pipeline",
+    "state",
+    "ehive",
+    "ensembl-hive",
+    "example",
+    "longmult",
+    "long_mult",
+    "long-mult"
+  ]
+}

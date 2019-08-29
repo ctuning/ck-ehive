@@ -61,10 +61,17 @@ def setup(i):
 
     winh=hosd.get('windows_base','')
 
-    full_path                       = cus.get('full_path','')
     env                             = i['env']
     env_prefix                      = cus['env_prefix']
+    full_path                       = cus.get('full_path','')
+    install_env                     = cus.get('install_env', {})
     env[env_prefix+'_SQLITE_PATH']  = full_path
     env[env_prefix+'_URL']          = 'sqlite:///' + full_path
+
+    ## Prepend the hidden variables with env_prefix
+    #
+    for varname in install_env.keys():
+        if varname.startswith('_'):
+            env[env_prefix + varname] = install_env[varname]
 
     return {'return':0, 'bat':''}
